@@ -1,0 +1,34 @@
+{
+    "name": "walk-up-discord-bot",
+    "version": "2.0.0",
+    "description": "A discord bot that plays a customizable walk-up song every time you enter a VC.",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node dist/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lukejriddle/walk-up-discord-bot.git"
+    },
+    "keywords": [
+        "walk-up",
+        "song",
+        "discord",
+        "bot"
+    ],
+    "author": "Luke Riddle",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lukejriddle/walk-up-discord-bot/issues"
+    },
+    "homepage": "https://github.com/lukejriddle/walk-up-discord-bot#readme",
+    "dependencies": {
+        "@discordjs/builders": "^0.8.2",
+        "@discordjs/rest": "0.1.0-canary.0",
+        "discord-api-types": "^0.24.0",
+        "discord.js": "^13.3.1",
+        "dotenv": "^10.0.0"
+    },
+    "devDependencies": {}
+}
