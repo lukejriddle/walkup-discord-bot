@@ -1,5 +1,6 @@
-require('dotenv').config({ path: __dirname + '/../.env' });
-client = require('./client/client');
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '/../.env') });
+const client = require('./client/client');
 
 const TOKEN = process.env.TOKEN;
 

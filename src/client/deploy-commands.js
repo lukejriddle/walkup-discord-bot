@@ -1,4 +1,5 @@
-require('dotenv').config({ path: __dirname + '/../../.env' });
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '/../../.env') });
 
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
@@ -13,5 +14,5 @@ const commands = getCommands().map(command => command.data.toJSON());
 const rest = new REST({ version: '9' }).setToken(token);
 
 rest.put(Routes.applicationCommands(clientId), { body: commands })
-    .then(() => console.log('Successfully registered application commands.'))
-    .catch(console.error);
+  .then(() => console.log('Successfully registered application commands.'))
+  .catch(console.error);
